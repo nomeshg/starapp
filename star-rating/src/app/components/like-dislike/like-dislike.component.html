@@ -1,0 +1,15 @@
+
+<div class="h-100 d-flex align-items-center justify-content-center">
+    <img style="width: 800px; height: 500px;" src="./assets/images/feedbackThanks.png" *ngIf="!saveInProgress"> 
+
+</div>
+
+<div class="h-100 d-flex align-items-center justify-content-center" style="padding-top: 250px; margin-left: -200px;" *ngIf="saveInProgress">
+
+    <div class="button" (click)="buttonClick('like')"> <img style="width: 300px; height: 300px;" src="./assets/images/like.png"> </div>
+
+    <div class="button" (click)="buttonClick('none')"> <img style="width: 300px; height: 300px;" src="./assets/images/neutral.png"> </div>
+
+    <div class="button" (click)="buttonClick('dislike')"> <img style="width: 300px; height: 300px;" src="./assets/images/dislike.png"> </div>
+
+</div>
